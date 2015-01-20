@@ -220,4 +220,4 @@ echo "[2]: (NEWS.txt)" >> $mail_file
 
 echo "Mail written to $mail_file. You will need to complete with short links to:"
 echo "  1) CHANGES.txt: $asf_git_repo?p=cassandra.git;a=blob_plain;f=CHANGES.txt;hb=refs/tags/$release-tentative"
-echo "  2) NEWS.txt:    $asf_git_repo?p=cassandra.git;a=blob_plain;f=NEWS.text;hb=refs/tags/$release-tentative"
+echo "  2) NEWS.txt:    $asf_git_repo?p=cassandra.git;a=blob_plain;f=NEWS.txt;hb=refs/tags/$release-tentative"
