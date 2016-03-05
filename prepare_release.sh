@@ -187,7 +187,13 @@ execute "debsign -k$gpg_key cassandra_${deb_release}_amd64.changes" 1>&3 2>&4
 
 echo "Uploading debian package ..." 1>&3 2>&4
 
-execute "scp cassandra* ${asf_username}@${apache_host}:public_html/"
+cat > /tmp/sftpbatch.txt <<EOF
+cd public_html
+put cassandra* 
+EOF
+
+
+execute "sftp -b /tmp/sftpbatch.txt ${asf_username}@${apache_host}"
 
 execute "cd $current_dir"
 

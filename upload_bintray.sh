@@ -1,12 +1,12 @@
 #!/bin/bash
 
 BINTRAY_USER=tjake
-BINTRAY_KEY=XXXXXXX
+BINTRAY_KEY=XXXXXXXX
 
 ROOTDIR=`cd -P -- "$(dirname -- "$1")" && printf '%s\n' "$(pwd -P)/$(basename -- "$1")"`
 ROOTLEN=$(( ${#ROOTDIR} + 1))
 
-for i in $(find ${ROOTDIR} -type f); do
+for i in $(find ${ROOTDIR} -type f -printf "%T@ %p\n" | sort -n -r | cut -d' ' -f 2); do
 	IFILE=`echo $(basename -- "$i") | cut -c 1`
     if [[ $IFILE != "." ]]; 
     then
