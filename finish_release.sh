@@ -228,4 +228,5 @@ echo " 7) update #cassandra topic on irc (/msg chanserv op #cassandra)"
 echo " 8) tweet from @cassandra"
 echo " 9) release version in JIRA"
 echo " 10) remove old version from people.apache.org (in /www/www.apache.org/dist/cassandra and debian)"
+echo " 11) increment build.xml base.version for the next release"
 
