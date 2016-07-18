@@ -2,15 +2,15 @@
 
 ##### TO EDIT #####
 
-asf_username="jake"
+asf_username="mshuler"
 
 # Same as for .prepare_release.sh
-mail_dir="/home/jake/Documents/Mail/"
-debian_package_dir="/home/jake/Tmp/"
+mail_dir="$HOME/Mail"
+debian_package_dir="$HOME/tmp/debian"
 
 # The directory for reprepro
 reprepro_dir="/var/packages"
-artifacts_svn_dir="/home/jake/workspace/cassandra-dist-svn"
+artifacts_svn_dir="$HOME/workspace/cassandra-dist-svn"
 
 ###################
 

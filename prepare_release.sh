@@ -2,17 +2,17 @@
 
 ##### TO EDIT #####
 
-asf_username="jake"
-gpg_key="0353B12C"
+asf_username="mshuler"
+gpg_key="FE4B2BDA"
 
 # The name of remote for the asf remote in your git repo
 git_asf_remote="apache"
 
 # Where you want to put the mail draft that this script generate
-mail_dir="/home/jake/Documents/Mail/"
+mail_dir="$HOME/Mail"
 
 # Where you want to put the debian files
-debian_package_dir="/home/jake/Tmp/"
+debian_package_dir="$HOME/tmp/debian"
 
 ###################
 
