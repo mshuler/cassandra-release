@@ -6,7 +6,7 @@ asf_username="mshuler"
 gpg_key="FE4B2BDA"
 
 # The name of remote for the asf remote in your git repo
-git_asf_remote="apache"
+git_asf_remote="origin"
 
 # Where you want to put the mail draft that this script generate
 mail_dir="$HOME/Mail"
