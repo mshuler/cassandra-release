@@ -3,6 +3,9 @@
 BINTRAY_USER=tjake
 BINTRAY_KEY=XXXXXXXX
 
+#Example:
+#./upload_bintray.sh ~/workspace/cassandra-dist-svn/debian
+
 ROOTDIR=`cd -P -- "$(dirname -- "$1")" && printf '%s\n' "$(pwd -P)/$(basename -- "$1")"`
 ROOTLEN=$(( ${#ROOTDIR} + 1))
 
