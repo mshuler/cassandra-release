@@ -4,6 +4,9 @@
 
 asf_username="mshuler"
 
+# The name of remote for the asf remote in your git repo
+git_asf_remote="origin"
+
 # Same as for .prepare_release.sh
 mail_dir="$HOME/Mail"
 debian_package_dir="$HOME/tmp/debian"
@@ -153,9 +156,9 @@ execute "git checkout $release-tentative"
 echo "Apache Cassandra $release release" > "_tmp_msg_"
 execute "git tag -a cassandra-$release -F _tmp_msg_"
 rm _tmp_msg_
-execute "git push apache refs/tags/cassandra-$release"
+execute "git push $git_asf_remote refs/tags/cassandra-$release"
 execute "git tag -d $release-tentative"
-execute "git push apache :refs/tags/$release-tentative"
+execute "git push $git_asf_remote :refs/tags/$release-tentative"
 
 echo "Deploying debian packages ..." 1>&3 2>&4
 
