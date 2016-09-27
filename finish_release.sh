@@ -12,7 +12,7 @@ mail_dir="$HOME/Mail"
 debian_package_dir="$HOME/tmp/debian"
 
 # The directory for reprepro
-reprepro_dir="/var/packages"
+reprepro_dir="$debian_package_dir/packages"
 artifacts_svn_dir="$HOME/svn/cassandra-dist"
 
 ###################
@@ -167,8 +167,8 @@ current_dir=`pwd`
 debian_series="${release_short:0:1}${release_short:2:1}x"
 
 execute "cd $reprepro_dir"
-execute "sudo reprepro includedeb $debian_series $debian_package_dir/cassandra_${release}_debian/cassandra_${deb_release}_all.deb"
-execute "sudo reprepro includedsc $debian_series $debian_package_dir/cassandra_${release}_debian/cassandra_${deb_release}.dsc"
+execute "reprepro includedeb $debian_series $debian_package_dir/cassandra_${release}_debian/cassandra_${deb_release}_all.deb"
+execute "reprepro includedsc $debian_series $debian_package_dir/cassandra_${release}_debian/cassandra_${deb_release}.dsc"
 
 execute "cp pool/main/c/cassandra/cassandra_${deb_release}_all.deb ${artifacts_svn_dir}/debian/pool/main/c/cassandra"
 execute "cp pool/main/c/cassandra/cassandra_${deb_release}.diff.gz ${artifacts_svn_dir}/debian/pool/main/c/cassandra"
@@ -176,7 +176,7 @@ execute "cp pool/main/c/cassandra/cassandra_${deb_release}.dsc ${artifacts_svn_d
 
 if [ "$release_short" \> "2.1" ]
 then
-    execute "sudo reprepro includedeb $debian_series $debian_package_dir/cassandra_${release}_debian/cassandra-tools_${deb_release}_all.deb"
+    execute "reprepro includedeb $debian_series $debian_package_dir/cassandra_${release}_debian/cassandra-tools_${deb_release}_all.deb"
     execute "cp pool/main/c/cassandra/cassandra-tools_${deb_release}_all.deb ${artifacts_svn_dir}/debian/pool/main/c/cassandra"
 fi
 
