@@ -168,7 +168,7 @@ debian_series="${release_short:0:1}${release_short:2:1}x"
 
 execute "cd $reprepro_dir"
 execute "reprepro --ignore=wrongdistribution include $debian_series $debian_package_dir/cassandra_${release}_debian/cassandra_${deb_release}_*.changes"
-execute "cp -p pool/main/c/cassandra/cassandra_${deb_release}* ${artifacts_svn_dir}/debian/pool/main/c/cassandra"
+execute "cp -p pool/main/c/cassandra/cassandra*_${deb_release}* ${artifacts_svn_dir}/debian/pool/main/c/cassandra"
 execute "cp -a dists/$debian_series ${artifacts_svn_dir}/debian/dists"
 
 execute "cd $current_dir"
