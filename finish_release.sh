@@ -131,7 +131,6 @@ then
 else
     release_short=${release:0:$((idx-1))}
 fi
-i
 
 echo "Deploying artifacts ..." 1>&3 2>&4
 start_dir=$PWD
