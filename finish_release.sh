@@ -10,7 +10,7 @@ debian_package_dir="$HOME/tmp/debian"
 
 # The directory for reprepro
 reprepro_dir="/var/packages"
-artifacts_svn_dir="$HOME/workspace/cassandra-dist-svn"
+artifacts_svn_dir="$HOME/svn/cassandra-dist"
 
 ###################
 
