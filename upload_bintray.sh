@@ -1,7 +1,7 @@
 #!/bin/bash
 
-BINTRAY_USER=tjake
-BINTRAY_KEY=XXXXXXXX
+BINTRAY_USER="$USER"
+BINTRAY_KEY="XXXXXXXX"
 
 #Example:
 #./upload_bintray.sh ~/workspace/cassandra-dist-svn/debian

@@ -2,7 +2,7 @@
 
 ##### TO EDIT #####
 
-asf_username="mshuler"
+asf_username="$USER"
 
 # The name of remote for the asf remote in your git repo
 git_asf_remote="origin"

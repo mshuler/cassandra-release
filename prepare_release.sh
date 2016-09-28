@@ -2,7 +2,7 @@
 
 ##### TO EDIT #####
 
-asf_username="mshuler"
+asf_username="$USER"
 gpg_key="FE4B2BDA"
 
 # The name of remote for the asf remote in your git repo
