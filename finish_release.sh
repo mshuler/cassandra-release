@@ -182,24 +182,18 @@ mail_file="$mail_dir/mail_release_$release"
 
 echo "[RELEASE] Apache Cassandra $release released" > $mail_file
 echo "" >> $mail_file
-echo "The Cassandra team is pleased to announce the release of Apache Cassandra" >> $mail_file
-echo "version $release." >> $mail_file
+echo "The Cassandra team is pleased to announce the release of Apache Cassandra version $release." >> $mail_file
 echo "" >> $mail_file
-echo "Apache Cassandra is a fully distributed database. It is the right choice" >> $mail_file
-echo "when you need scalability and high availability without compromising" >> $mail_file
-echo "performance." >> $mail_file
+echo "Apache Cassandra is a fully distributed database. It is the right choice when you need scalability and high availability without compromising performance." >> $mail_file
 echo "" >> $mail_file
 echo " http://cassandra.apache.org/" >> $mail_file
 echo "" >> $mail_file
-echo "Downloads of source and binary distributions are listed in our download" >> $mail_file
-echo "section:" >> $mail_file
+echo "Downloads of source and binary distributions are listed in our download section:" >> $mail_file
 echo "" >> $mail_file
 echo " http://cassandra.apache.org/download/" >> $mail_file
 echo "" >> $mail_file
 series="${release_short:0:1}.${release_short:2:1}"
-echo "This version is a bug fix release[1] on the $series series. As always, please pay" >> $mail_file
-echo "attention to the release notes[2] and Let us know[3] if you were to encounter" >> $mail_file
-echo "any problem." >> $mail_file
+echo "This version is a bug fix release[1] on the $series series. As always, please pay attention to the release notes[2] and Let us know[3] if you were to encounter any problem." >> $mail_file
 echo "" >> $mail_file
 echo "Enjoy!" >> $mail_file
 echo "" >> $mail_file
