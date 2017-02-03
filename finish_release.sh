@@ -164,7 +164,7 @@ echo "Deploying debian packages ..." 1>&3 2>&4
 
 current_dir=`pwd`
 
-debian_series="${release_short:0:1}${release_short:2:1}x"
+debian_series="${release_short:0:1}${release_short:2:2}x"
 
 execute "cd $reprepro_dir"
 execute "reprepro --ignore=wrongdistribution include $debian_series $debian_package_dir/cassandra_${release}_debian/cassandra_${deb_release}_*.changes"
